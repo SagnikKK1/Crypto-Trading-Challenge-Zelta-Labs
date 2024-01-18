@@ -1,4 +1,4 @@
-# NBEATS OHLCV Close Price Prediction with Signal Generation
+#  Signal Generation using NBEATS OHLCV Close Price Prediction 
 
 ## Overview
 
