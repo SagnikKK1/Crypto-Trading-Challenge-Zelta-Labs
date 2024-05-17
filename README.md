@@ -21,6 +21,7 @@ This repository hosts an advanced implementation of the N-BEATS algorithm for pr
 
 - Python 3.6 or later
 - Required Libraries: numpy, pandas, matplotlib, tensorflow/pytorch, keras (for TensorFlow)
+
 ### Results
 
 The project includes an in-depth analysis with visualizations of the strategy's performance, comparing it to the buy and hold benchmark. The strategy has shown remarkable success, yielding large returns — up to 13 times the initial investment. This exceptional performance demonstrates the potential of the implemented clustering and portfolio optimization techniques in algorithmic trading. 
