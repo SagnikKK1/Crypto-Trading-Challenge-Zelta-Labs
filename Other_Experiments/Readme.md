@@ -1,8 +1,8 @@
-## Bitcoin Close Price Prediction
-This repository contains four experiments focused on predicting Bitcoin's close price using various methods: Technical Analysis, ARIMA, VAR (Vector AutoRegression), and Anomaly Detection.
+# Bitcoin Close Price Prediction
+This folder contains four experiments other than our main aproach that is focused on predicting Bitcoin's close price using various methods: Technical Analysis, ARIMA, VAR (Vector AutoRegression), and Anomaly Detection.
 
-Table of Contents
-Introduction
+## Table of Contents
+### Introduction
 Experiments
 Technical Analysis
 ARIMA (AutoRegressive Integrated Moving Average)
