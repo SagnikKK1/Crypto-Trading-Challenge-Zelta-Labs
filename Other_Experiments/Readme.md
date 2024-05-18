@@ -40,7 +40,7 @@ Key Files: ensemble.ipynb
 ## Anamoly Detection
 Anomaly detection aims to identify unusual data points that do not fit the general pattern. We used methods like Isolation Forest and Local Outlier Factor to detect anomalies in Bitcoin price data.
 Folder: Anamoly
-Key Files: anamoly.ipynb
+Key Files: anamoly1.ipynb
 ## Results
 A summary of the results from each experiment is provided below. For detailed results and analysis, refer to the respective Jupyter Notebooks and scripts in each experiment's folder.
 
