@@ -36,7 +36,7 @@ Metric used here was "accuracy".
 ## Grid Search 
 We furthur optimised our results using Grid search. Grid searching is a technique employed to fine-tune the hyperparameters of machine learning models. It systematically explores a predefined hyperparameter space, evaluating each combination using cross-validation. By exhaustively searching through various hyperparameter configurations, grid searching aims to identify the optimal set of hyperparameters that maximize the model's performance on the validation data. This automated approach streamlines the hyperparameter tuning process, saving time and effort while enhancing the model's ability to generalize to unseen data. Once the best hyperparameters are determined, the model can be trained on the entire dataset, including the validation set, to ensure optimal performance when deployed in real-world scenarios.
 ## Results after Grid Searching
-We used Grid Search on our Random forest algorithm and following are the results.
+We used Grid Search on our Random forest algorithm and following are the results:
 - **Best: 0.903879 using {'criterion': 'entropy', 'max_depth': 10, 'n_estimators': 80}**
 - #8 0.877634 (0.015339) with: {'criterion': 'gini', 'max_depth': 5, 'n_estimators': 20}
 - #6 0.880740 (0.014351) with: {'criterion': 'gini', 'max_depth': 5, 'n_estimators': 80}
