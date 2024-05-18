@@ -19,8 +19,9 @@ The effectiveness of anomaly detection is evaluated based on the performance of 
 ## Results
 - Initial Portfolio Value : **100$**
 - Final Portfolio Value: **42513.75$**
+
 We assumed 0.2% cost of slippage and transactions.
-Some more metrics about our strategy returns
+### Some more metrics about our strategy returns
 - count    138.000000 ( A total of 138 trades were executed)
 - mean       0.054831
 - std        0.142640
