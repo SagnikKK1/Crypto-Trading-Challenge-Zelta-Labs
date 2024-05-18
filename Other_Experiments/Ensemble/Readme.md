@@ -33,3 +33,5 @@ Metric used here was "accuracy".
 - AB: 0.901379 (0.014738)
 - GBM: 0.912769 (0.014071)
 - RF: 0.908449 (0.015287)
+## Grid Search 
+We furthur optimised our results using Grid search. Grid searching is a technique employed to fine-tune the hyperparameters of machine learning models. It systematically explores a predefined hyperparameter space, evaluating each combination using cross-validation. By exhaustively searching through various hyperparameter configurations, grid searching aims to identify the optimal set of hyperparameters that maximize the model's performance on the validation data. This automated approach streamlines the hyperparameter tuning process, saving time and effort while enhancing the model's ability to generalize to unseen data. Once the best hyperparameters are determined, the model can be trained on the entire dataset, including the validation set, to ensure optimal performance when deployed in real-world scenarios.
