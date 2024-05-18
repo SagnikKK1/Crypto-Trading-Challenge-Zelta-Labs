@@ -1,15 +1,17 @@
 import pandas as pd
 import numpy as np
 import seaborn as sns
+import warnings
+warnings.filterwarnings('ignore')
 pd.options.mode.chained_assignment = None
 
 def read_file(file_path: str):
-    df=pd.read_csv(file_path)
-    df['datetime']=pd.to_datetime(df['datetime'])
-    signal=df[df['signals']!=0]
+    df=pd.read_csv(file_path) #reading logs file
+    df['datetime']=pd.to_datetime(df['datetime']) #changing to datetime object
+    signal=df[df['signals']!=0] #filtering signals
     return signal
 
-def engine(file_path:str, slippage: float, initial_portfolio: float):
+def engine(file_path:str, slipage=0.002, initial_portfolio=1000.00):
     signal=read_file(file_path)
     returns=[]     #list to track returns
     trade_time=[]  #list to track time of execution of each trade
@@ -28,7 +30,7 @@ def engine(file_path:str, slippage: float, initial_portfolio: float):
             
     trade_time=np.array(trade_time) #converting to numpy array
     returns=np.array(returns)       #converting to numpy array
-    returns_2=1+returns-slippage    # portfolio mutliplication factors
+    returns_2=1+returns-slipage     #portfolio mutliplication factors
     portfolio=[initial_portfolio]   #list to track portfolio values
     
     for i in returns_2:
@@ -36,20 +38,23 @@ def engine(file_path:str, slippage: float, initial_portfolio: float):
         
     max_drawdown=0
     peak_portfolio=initial_portfolio
+    
     for i in portfolio:
         if i > peak_portfolio:
             peak_portfolio=i
         else:
             drawdown=(peak_portfolio-i)/peak_portfolio
             max_drawdown=max(drawdown,max_drawdown)
-    pnl=[]
+            
+    pnl=[] #list to track profit and loss
+    
     for i in range(1,len(portfolio)):
         pnl.append(portfolio[i]-portfolio[i-1])
         
     pnl=np.array(pnl)
     pnl_loss=pnl[pnl<0]
     pnl_profit=pnl[pnl>=0]
-    benchmark=initial_portfolio*(0.998+(signal['close'].iloc[-1]-signal['open'].iloc[0])/signal['open'].iloc[0])
+    benchmark=initial_portfolio*(1-slipage+(signal['close'].iloc[-1]-signal['open'].iloc[0])/signal['open'].iloc[0])
 
     print(f"Average holding time: {np.mean(trade_time)}")
     print(f"Average Returns: {np.mean(pnl)}")
@@ -69,6 +74,9 @@ def engine(file_path:str, slippage: float, initial_portfolio: float):
     print(f"lowest portfolio Value: {min(portfolio)}")
     print(f"max drawdown: {max_drawdown*100}%")
     print(f"From: {signal['datetime'].iloc[0]}")
-    print(f"From: {signal['datetime'].iloc[-1]}")
+    print(f"To: {signal['datetime'].iloc[-1]}")
     
     return portfolio
+
+def plot_portfolio(portfolio: np.array):
+    sns.lineplot(portfolio)
