@@ -16,3 +16,7 @@ Anomaly detection also plays a role in risk management within the trading strate
 
 - **Performance Evaluation**:
 The effectiveness of anomaly detection is evaluated based on the performance of the trading strategy, as reflected in key metrics such as portfolio returns, maximum drawdown, and risk-adjusted ratios like the Sharpe and Sortino ratios. By analyzing the trade history and performance metrics, users can assess the robustness of the anomaly detection mechanism and its impact on overall strategy performance.
+## Results
+- Initial Portfolio Value : **100$**
+- Final Portfolio Value: **42513.75$**
+We assumed 0.2% cost of slippage and transactions.
