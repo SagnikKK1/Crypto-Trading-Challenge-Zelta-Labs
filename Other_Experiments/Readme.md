@@ -45,4 +45,5 @@ A summary of the results from each experiment is provided below. For detailed re
 - **Technical Analysis**: Identified key support and resistance levels, and provided buy/sell signals based on technical indicators.
 - **ARIMA**: Achieved a satisfactory level of prediction accuracy with optimized parameters (p, d, q).
 - **VAR**: Successfully modeled the interdependencies between Bitcoin price and other financial indicators, leading to improved forecast accuracy.
+- **Ensembling**: Effectively combined technical analysis and machine learning algorithms.
 - **Anomaly Detection**: Effectively detected anomalies in the price data which could signify potential market shifts or irregular trading activity.
