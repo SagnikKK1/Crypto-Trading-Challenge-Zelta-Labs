@@ -13,3 +13,14 @@ The following machine learning models are employed in this forecasting project:
 - **AdaBoost Classifier (AB)**-AdaBoost algorithm, short for Adaptive Boosting, is a Boosting technique used as an Ensemble Method in Machine Learning. It is called Adaptive Boosting as the weights are re-assigned to each instance, with higher weights assigned to incorrectly classified instances.
 - **Gradient Boosting Classifier (GBM)**- Gradient Boosting is a powerful boosting algorithm that combines several weak learners into strong learners, in which each new model is trained to minimize the loss function such as mean squared error or cross-entropy of the previous model using gradient descent
 - **Random Forest Classifier (RF)**- An ensemble method constructing multiple decision trees and aggregating predictions for robust classification.
+## Initial Results
+Metric used here was "accuracy".
+- Sample-> Name : Accuracy : Standard Deviation
+- LR: 0.985289 (0.007221)
+- LDA: 0.897271 (0.017575)
+- CART: 0.879491 (0.015983)
+- NB: 0.783258 (0.045853)
+- NN: 0.810535 (0.112958)
+- AB: 0.901379 (0.014738)
+- GBM: 0.912769 (0.014071)
+- RF: 0.908449 (0.015287)
