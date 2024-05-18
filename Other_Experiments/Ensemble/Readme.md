@@ -5,11 +5,11 @@ We implemented a moving average crossover strategy, wherein a signal of 1 is gen
 ## Models Used
 The following machine learning models are employed in this forecasting project:
 
--**Logistic Regression (LR)**
--**Linear Discriminant Analysis (LDA)**
--**Decision Tree Classifier (CART)**
--**Gaussian Naive Bayes (NB)**
--**Multi-layer Perceptron Classifier (NN)**
--**AdaBoost Classifier (AB)**
--**Gradient Boosting Classifier (GBM)**
--**Random Forest Classifier (RF)**
+- **Logistic Regression (LR)**
+- **Linear Discriminant Analysis (LDA)**
+- **Decision Tree Classifier (CART)**
+- **Gaussian Naive Bayes (NB)**
+ -**Multi-layer Perceptron Classifier (NN)**
+- **AdaBoost Classifier (AB)**
+- **Gradient Boosting Classifier (GBM)**
+- **Random Forest Classifier (RF)**
