@@ -3,7 +3,7 @@ This folder contains four experiments other than our main aproach that is focuse
 
 ## Table of Contents
 ### Introduction
-Experiments
+#### Experiments
 Technical Analysis
 ARIMA (AutoRegressive Integrated Moving Average)
 VAR (Vector AutoRegression)
