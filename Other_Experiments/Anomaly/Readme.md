@@ -22,11 +22,11 @@ The effectiveness of anomaly detection is evaluated based on the performance of 
 
 We assumed 0.2% cost of slippage and transactions.
 ### Some more metrics about our strategy returns
-- count    138.000000 ( A total of 138 trades were executed)
-- mean       0.054831
-- std        0.142640
-- min       -0.050000
-- 25%       -0.032844
-- 50%        0.002389
-- 75%        0.074824
-- max        0.775420 ( Maximum return was 77% )
+- count :   138.000000 ( A total of 138 trades were executed)
+- mean  :     0.054831
+- std   :     0.142640
+- min   :    -0.050000
+- 25%   :    -0.032844
+- 50%   :     0.002389
+- 75%   :     0.074824
+- max   :     0.775420 ( Maximum return was 77% )
