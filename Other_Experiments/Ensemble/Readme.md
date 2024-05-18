@@ -13,9 +13,18 @@ The following machine learning models are employed in this forecasting project:
 - **AdaBoost Classifier (AB)**-AdaBoost algorithm, short for Adaptive Boosting, is a Boosting technique used as an Ensemble Method in Machine Learning. It is called Adaptive Boosting as the weights are re-assigned to each instance, with higher weights assigned to incorrectly classified instances.
 - **Gradient Boosting Classifier (GBM)**- Gradient Boosting is a powerful boosting algorithm that combines several weak learners into strong learners, in which each new model is trained to minimize the loss function such as mean squared error or cross-entropy of the previous model using gradient descent
 - **Random Forest Classifier (RF)**- An ensemble method constructing multiple decision trees and aggregating predictions for robust classification.
+
+## Training and Testing
+We utilize k-fold cross-validation to evaluate the performance of each machine learning model in our ensemble. This approach ensures robustness by partitioning the training data into k subsets (or folds), training the model k times on different combinations of training and validation sets, and averaging the results.
+
+For each model in our list, we perform k-fold cross-validation using the KFold function from scikit-learn, specifying the number of splits (n_splits). We then compute the evaluation metric (e.g., accuracy, precision, recall) for each fold using the cross_val_score function.
+
+The results and standard deviation of the evaluation metric across all folds are stored in the results list. Additionally, the names of the models are stored in the names list for reference.
+
+Finally, we print the mean and standard deviation of the evaluation metric for each model using a formatted message, indicating the average performance and its variability across folds. This provides insights into the model's generalization performance and helps in selecting the most suitable model for our forecasting task.
 ## Initial Results
 Metric used here was "accuracy".
-- Sample-> Name : Accuracy : Standard Deviation
+- Sample-> Name : Accuracy (Standard Deviation)
 - LR: 0.985289 (0.007221)
 - LDA: 0.897271 (0.017575)
 - CART: 0.879491 (0.015983)
