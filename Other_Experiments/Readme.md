@@ -29,11 +29,16 @@ VAR models multivariate time series data and captures the linear interdependenci
 Folder: var
 Key Files: var_model.ipynb
 
-## Anomaly Detection
+## Ensembling
 Ensembling in machine learning involves combining the predictions of multiple individual models to improve overall performance, leveraging the strengths of each model while mitigating their weaknesses. It often results in more robust and accurate predictions compared to single models.
 
 Folder: Ensemble
 Key Files: ensemble.ipynb
+
+## Anamoly Detection
+Anomaly detection aims to identify unusual data points that do not fit the general pattern. We used methods like Isolation Forest and Local Outlier Factor to detect anomalies in Bitcoin price data.
+Folder: Anamoly
+Key Files: anamoly.ipynb
 ## Results
 A summary of the results from each experiment is provided below. For detailed results and analysis, refer to the respective Jupyter Notebooks and scripts in each experiment's folder.
 
