@@ -7,7 +7,9 @@ This folder contains four experiments other than our main aproach that is focuse
 - **Technical Analysis**
 - **ARIMA** (AutoRegressive Integrated Moving Average)
 - **VAR** (Vector AutoRegression)
+- **Ensembling**
 - **Anomaly Detection**
+  
 
 In this project, we explore different methodologies to predict the close price of Bitcoin. The four experiments conducted are:
 
