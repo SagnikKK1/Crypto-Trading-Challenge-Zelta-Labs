@@ -1,26 +1,18 @@
-## Imports:
-The code initiates by importing essential libraries such as yfinance, enabling the retrieval of financial data, pandas, facilitating data manipulation and analysis, numpy, providing support for numerical computations, and seaborn, allowing for data visualization. These libraries are fundamental for handling data, implementing trading strategies, and evaluating performance metrics.
+# Introduction
+Anomaly detection, a fundamental concept in financial data analysis and trading strategies, plays a pivotal role in tading strategies. Anomalies, often indicative of irregularities or outliers in market behavior, serve as crucial signals for identifying potential trading opportunities. In this context, we leverage anomaly detection techniques to scrutinize historical Bitcoin price data, seeking deviations from expected patterns derived from moving averages (MA), relative strength index (RSI), and golden ratio bounds. By identifying anomalies, the code aims to capture market inefficiencies and capitalize on transient deviations from normal market behavior. This introduction sets the stage for understanding how anomaly detection is utilized within the code to drive trading decisions and enhance portfolio performance.
 
-## Parameters:
-Various parameters are defined to configure the trading strategy, setting crucial values like phi for the anamoly threshold, threshold for anomaly detection, initial_portfolio_value to establish the starting value of the portfolio, and additional parameters such as cool_off_period, trailing_stop_ratio, max_drawdown_limit, and risk_free_rate to fine-tune the strategy's behavior according to specific risk preferences and market conditions.
+## Aspects that were considered
+- **Anomaly Identification**:
+Anomalies in the Bitcoin price data are identified by analyzing various factors, including moving averages (MA), relative strength index (RSI), and golden ratio bounds. These indicators are used to detect instances where the market behaves abnormally, potentially signaling favorable entry or exit points for trades.
 
-## Retrieve Stock Data:
-The code reads historical Bitcoin price data from a CSV file using pandas, converting it into a structured DataFrame. It calculates essential indicators like moving averages (MA), relative strength index (RSI), and golden ratio bounds to detect anomalies in the data, providing insights into potential trading opportunities.
+- **Improved Anomaly Detection**:
+The code implements an improved anomaly detection mechanism by combining multiple criteria to identify anomalies more accurately. For example, anomalies are detected when the Bitcoin price falls outside the bounds defined by the moving averages and the RSI exceeds a certain threshold, indicating overbought or oversold conditions.
 
-## Improved Anomaly Detection:
-Anomalies in the data, indicative of potential trading signals, are identified based on specific conditions related to moving averages, RSI, and price bounds. These anomalies represent instances where the market behavior deviates significantly from normal patterns, potentially signaling favorable entry or exit points for trades.
+- **Trade Triggering**:
+Detected anomalies serve as triggers for executing trades in the trading strategy. When an anomaly is detected, the code evaluates whether to initiate a trade based on predefined conditions, such as the presence of an open position and the cool-off period since the last trade. If the conditions are met, the code executes a buy order to enter a new position in the market.
 
-## Dynamic Trade Size:
-The code computes rolling historical volatility to dynamically adjust the trade size, ensuring that the risk exposure aligns with market conditions. By incorporating volatility into the trade sizing strategy, the code aims to optimize risk management and capitalize on opportunities presented by varying levels of market volatility.
+- **Risk Management**:
+Anomaly detection also plays a role in risk management within the trading strategy. For instance, the code dynamically adjusts the trade size based on rolling historical volatility, ensuring that trade sizes are proportional to market conditions. Additionally, the code implements a trailing stop-loss mechanism to limit potential losses in case anomalies persist or worsen after a trade is initiated.
 
-## Trading Strategy Implementation:
-The trading strategy, encompassing buy logic, trailing stop loss, and portfolio management, is executed iteratively over detected anomalies. This segment of the code handles the actual buying and selling of assets, as well as the management of the portfolio's composition and value over time.
-
-## Trade History:
-Each trade's details, including the buy and sell dates, corresponding prices, returns, portfolio value, and maximum drawdown, are meticulously recorded in a structured format. This trade history log provides a comprehensive record of the strategy's performance, enabling detailed analysis and evaluation.
-
-## Calculating Ratios:
-Performance evaluation metrics such as the Sharpe and Sortino ratios are computed to assess the profitability and risk-adjusted returns of the trading strategy. These ratios provide insights into the strategy's risk-adjusted performance, helping to gauge its effectiveness in generating returns relative to the level of risk undertaken.
-
-## Summary Table:
-The trade history, along with calculated ratios and trade amounts, is presented in a tabular format for easy interpretation and analysis. This summary table consolidates the key information related to the strategy's performance, enabling users to gain insights into its profitability, risk exposure, and overall effectiveness.
+- **Performance Evaluation**:
+The effectiveness of anomaly detection is evaluated based on the performance of the trading strategy, as reflected in key metrics such as portfolio returns, maximum drawdown, and risk-adjusted ratios like the Sharpe and Sortino ratios. By analyzing the trade history and performance metrics, users can assess the robustness of the anomaly detection mechanism and its impact on overall strategy performance.
