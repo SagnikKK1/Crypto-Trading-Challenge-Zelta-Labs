@@ -15,25 +15,25 @@ In this project, we explore different methodologies to predict the close price o
 Technical analysis involves using historical price and volume data to forecast future price movements. In this experiment, we used various technical indicators such as moving averages, RSI (Relative Strength Index), and MACD (Moving Average Convergence Divergence).
 
 Folder: technical_analysis
-Key Files: technical_analysis.ipynb, indicators.py
+Key Files: technical_analysis.ipynb
 
 ## ARIMA (AutoRegressive Integrated Moving Average)
 ARIMA is a popular time series forecasting method that uses past values to predict future values. We optimized the parameters (p, d, q) to build the best model for Bitcoin close price prediction.
 
 Folder: arima
-Key Files: arima_model.ipynb, arima_forecast.py
+Key Files: arima_model.ipynb
 
 ## VAR (Vector AutoRegression)
 VAR models multivariate time series data and captures the linear interdependencies among multiple time series. We applied VAR to Bitcoin prices and other related financial metrics.
 
 Folder: var
-Key Files: var_model.ipynb, var_analysis.py
+Key Files: var_model.ipynb
 
 ## Anomaly Detection
-Anomaly detection aims to identify unusual data points that do not fit the general pattern. We used methods like Isolation Forest and Local Outlier Factor to detect anomalies in Bitcoin price data.
+Ensembling in machine learning involves combining the predictions of multiple individual models to improve overall performance, leveraging the strengths of each model while mitigating their weaknesses. It often results in more robust and accurate predictions compared to single models.
 
-Folder: anomaly_detection
-Key Files: anomaly_detection.ipynb, anomaly_methods.py
+Folder: Ensemble
+Key Files: ensemble.ipynb
 ## Results
 A summary of the results from each experiment is provided below. For detailed results and analysis, refer to the respective Jupyter Notebooks and scripts in each experiment's folder.
 
