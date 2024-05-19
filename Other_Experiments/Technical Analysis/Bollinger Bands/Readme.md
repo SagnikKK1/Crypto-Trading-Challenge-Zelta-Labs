@@ -28,3 +28,23 @@ Usage
 - **Identifying Breakouts**: When the price moves significantly and breaks through the upper or lower band, it can indicate a strong continuation of the trend. Traders may use this signal to enter trades in the direction of the breakout.
 Mean Reversion Strategy: Since prices often revert to the mean (the SMA), traders might sell when the price touches the upper band and buy when it touches the lower band.
 - **Band Squeeze**: When the bands are very close together, it often precedes a significant price move. This is known as the "Bollinger Band Squeeze."
+- **Use for Bitcoin**:Cryptocurrencies exhibit significant price fluctuations, making Bollinger Bands an effective tool for traders to assess market conditions, predict potential price movements, and make informed trading decisions.
+## Results
+### Buy Signal Results
+- **count**  :  39.000000 ( 39 Buy Signals )
+- **mean**   :  -0.024343
+- **std**    :   0.035035
+- **min**    :  -0.140916
+- **25%**    :  -0.030156
+- **50%**    :  -0.013077
+- **75%**    :  -0.002909
+- **max**    :   0.019071 ( maximum profit of 19% )
+### Sell Signal Results
+- **count**  :  95.000000 ( 95 Sell signals )
+- **mean**   :   0.056767
+- **std**    :   0.056607
+- **min**    :  -0.108787
+- **25%**    :   0.025376
+- **50%**    :   0.044005
+- **75%**    :   0.087266
+- **max**    :   0.371869 ( maximum profit of 37% )
