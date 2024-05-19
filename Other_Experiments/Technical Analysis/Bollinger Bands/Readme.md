@@ -10,15 +10,8 @@ The Bollinger Bands are calculated using the following formulas:
 
 Middle Band (MB):
 
-𝑀
-𝐵
-=
-𝑆
-𝑀
-𝐴
-𝑛
-MB=SMA 
-n
+𝑀𝐵 = 𝑆𝑀𝐴𝑛
+
 ​
  
 where 
