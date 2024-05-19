@@ -8,50 +8,18 @@ Bollinger Bands are a set of lines plotted two standard deviations (positively a
 ## Formula
 The Bollinger Bands are calculated using the following formulas:
 
-Middle Band (MB):
+### Middle Band (MB):
 
 𝑀𝐵 = 𝑆𝑀𝐴𝑛
+where n is the number of periods (commonly 20).
 
-​
- 
-where 
-𝑛
-n is the number of periods (commonly 20).
+### Upper Band (UB):
+𝑈𝐵 =𝑀𝐵 + ( 𝐾 × 𝜎 )
+where K is the number of standard deviations (commonly 2), and σ is the standard deviation over the same period as the SMA.
 
-Upper Band (UB):
-
-𝑈
-𝐵
-=
-𝑀
-𝐵
-+
-(
-𝐾
-×
-𝜎
-)
-UB=MB+(K×σ)
-where 
-𝐾
-K is the number of standard deviations (commonly 2), and 
-𝜎
-σ is the standard deviation over the same period as the SMA.
-
-Lower Band (LB):
-
-𝐿
-𝐵
-=
-𝑀
-𝐵
-−
-(
-𝐾
-×
-𝜎
-)
-LB=MB−(K×σ)
+### Lower Band (LB):
+𝐿𝐵 = 𝑀𝐵 − ( 𝐾 × 𝜎 )
+where K is the number of standard deviations (commonly 2), and σ is the standard deviation over the same period as the SMA.
 ## Interpretation
 - **Volatility**: The width of the bands increases with volatility and decreases during less volatile periods. When the bands are narrow, it indicates low volatility, and when they are wide, it indicates high volatility.
 Overbought/Oversold Conditions: Prices near the upper band can indicate an overbought condition, while prices near the lower band can indicate an oversold condition.
