@@ -18,13 +18,13 @@ def engine(file_path:str, slipage=0.002, initial_portfolio=1000.00):
     
     for i in range(0,len(signal),2):
         if signal['signals'].iloc[i]==1: #long position
-            entry=signal['open'].iloc[i]
-            exit=signal['open'].iloc[i+1]
+            entry=signal['close'].iloc[i]
+            exit=signal['close'].iloc[i+1]
             returns.append((exit-entry)/entry)
             trade_time.append(signal['datetime'].iloc[i+1]-signal['datetime'].iloc[i])
         else: #short position
-            entry=signal['open'].iloc[i]
-            exit=signal['open'].iloc[i+1]
+            entry=signal['close'].iloc[i]
+            exit=signal['close'].iloc[i+1]
             returns.append((entry-exit)/entry)
             trade_time.append(signal['datetime'].iloc[i+1]-signal['datetime'].iloc[i])
             
@@ -54,7 +54,7 @@ def engine(file_path:str, slipage=0.002, initial_portfolio=1000.00):
     pnl=np.array(pnl)
     pnl_loss=pnl[pnl<0]
     pnl_profit=pnl[pnl>=0]
-    benchmark=initial_portfolio*(1-slipage+(signal['close'].iloc[-1]-signal['open'].iloc[0])/signal['open'].iloc[0])
+    benchmark=initial_portfolio*(1-slipage+(signal['close'].iloc[-1]-signal['close'].iloc[0])/signal['close'].iloc[0])
 
     print(f"Average holding time: {np.mean(trade_time)}")
     print(f"Average Returns: {np.mean(pnl)}")
