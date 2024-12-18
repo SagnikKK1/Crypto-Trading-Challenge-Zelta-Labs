@@ -7,7 +7,7 @@ This repository hosts an advanced implementation of the N-BEATS algorithm for pr
 ## Features
 
 - **N-BEATS Algorithm**: Utilizes the cutting-edge N-BEATS model for time series forecasting.
-- ![Returns](architecture.png)
+- ![Architecture](2023/Images/architecture.png)
 - **OHLCV Data (2018-2022)**: Processes extensive historical OHLCV data for accurate model training and evaluation.
 - **Close Price Prediction**: Aims at predicting the crucial closing prices of bitcoin by using rolling windows.
 - **Signal Generation**: Generates trading signals based on predictive analytics.
