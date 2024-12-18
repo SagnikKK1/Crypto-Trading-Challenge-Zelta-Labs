@@ -29,8 +29,8 @@ The project includes an in-depth analysis with visualizations of the strategy's 
 While predicting pseudo future in time series presents its challenges, notably some degree of overfitting, these hurdles have been addressed with careful data handling and model tuning. The initial results are promising and indicate strong potential for further development into a market-ready product. Our approach demonstrates not just the feasibility but also the efficacy of advanced algorithmic trading strategies in today's dynamic markets.
 
 
-![Returns](Results_visualisation.png)
-![Returns](Back_testing_resullts.png)
+![Returns](Images/Results_visualisation.png)
+![Returns](Images/Back_testing_resullts.png)
 
 
 
